@@ -5,7 +5,7 @@ This WordPress plugin integrates an admin panel and a floating chatbot, each dev
 AIIQ Chatbot: Containg all the files and folders of admin panel, floating chatbot and wordpress plugin.
 
 # Directory Structure
-
+```bash
 AIIQ Chatbot/
 ├── admin-panel/
 │   ├── build/                  # build folder of admin pane;
@@ -28,7 +28,7 @@ AIIQ Chatbot/
     ├── build/                  # build folder of admin panel (copied from admin panel folder)
     ├── classes/                
     └── wp-admin-panel.php
-
+```
 # Working with Admin Panel individually
 
 1. Ensure WordPress is Installed Locally:
@@ -39,17 +39,20 @@ Navigate to your local WordPress site directory (e.g., wordpress/wp-content/plug
 
 3. Install Dependencies:
 Open the admin-panel folder in your terminal and run:
+```
 npm install --force
+```
 This command will download all the required dependencies.
 
-4. Build the Project:
+5. Build the Project:
 Run the following command to create or update the build folder:
+```
 npm run build
-
-5. Activate the Plugin:
+```
+7. Activate the Plugin:
 Go to your local WordPress site, navigate to the Plugins section, and activate the "AIIQ" plugin.
 
-6. Develop and Refresh:
+8. Develop and Refresh:
 Whenever you make changes to the admin panel code, ensure to run the npm run build command again and refresh your WordPress site to see the updated changes.
 
 # Working with Floating Chatbot individually
@@ -62,17 +65,20 @@ Navigate to your local WordPress site directory (e.g., wordpress/wp-content/plug
 
 3. Install Dependencies:
 Open the floating-chatbot folder in your terminal and run:
+```
 npm install --force
+```
 This command will download all the required dependencies.
 
-4. Build the Project:
+5. Build the Project:
 Run the following command to create or update the build folder:
+```
 npm run build
-
-5. Activate the Plugin:
+```
+7. Activate the Plugin:
 Go to your local WordPress site, navigate to the Plugins section, and activate the "Floating Chatbot" plugin.
 
-6. Develop and Refresh:
+8. Develop and Refresh:
 Whenever you make changes to the admin panel code, ensure to run the npm run build command again and refresh your WordPress site to see the updated changes.
 
 # Combining Both Projects
@@ -90,16 +96,15 @@ To integrate the admin panel and floating chatbot into a single WordPress plugin
     - Paste this into the bot folder inside the WordPress Plugin folder.
 
 3. Prepare the Plugin for Upload:
-
     - Ensure the WordPress Plugin folder now contains:
-
+```bash
 WordPress Plugin/
 ├── bot/
 │   └── build/              # Build folder of floating chatbot (copied from floating chatbot folder)
 ├── build/                  # Build folder of admin panel (copied from admin panel folder)
 ├── classes/                
 └── wp-admin-panel.php
-
+```
 Zip the WordPress Plugin folder to create a compressed archive.
 
 4. Upload and Install the Plugin:
@@ -109,6 +114,3 @@ Zip the WordPress Plugin folder to create a compressed archive.
     - Click Install Now and then activate the plugin once the installation is complete.
 
 By following these steps, you will have successfully combined the admin panel and floating chatbot into a single, functional WordPress plugin.
-
-
-
